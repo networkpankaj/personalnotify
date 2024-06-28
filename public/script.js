@@ -78,7 +78,7 @@ async function fetchLeaveRequests() {
   });
   
   async function getLocationFromCoordinates(latitude, longitude) {
-    const apiKey = '59d98cd09c05454ba8f3677be457ec95'; 
+    const apiKey = 'API_KEY'; 
     const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
     
     try {
