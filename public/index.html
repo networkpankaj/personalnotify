@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Notify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="dropdown">
+            <div class="notification-count" id="notificationCount">0</div>
+            <img src="./image/notice.png" alt="Notification Bell" id="notificationBell">
+
+            <div class="dropdown-content" id="notificationDropdown">
+                <ul id="notificationList"></ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form id="leaveForm">
+            <textarea  id="leaveMessage" placeholder="Enter your leave request"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
